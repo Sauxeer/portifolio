@@ -1,0 +1,31 @@
+.rodape {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 80px 40px 80px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contato-comigo {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.direitos-reservados {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  align-self: end;
+}
+
+@media (max-width: 700px) {
+  .rodape {
+    flex-wrap: wrap;
+    gap: 40px 0px;
+    padding: 40px 20px 40px 20px;
+  }
+  .contato-comigo {
+    font-size: 1.25rem;
+  }
+  .direitos-reservados {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,88 @@
+.trabalhos {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0px 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 80px;
+  gap: 10px 40px;
+}
+
+.trabalhos h2 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 3%;
+  grid-column: 1 / -1;
+  margin-bottom: 20px;
+  color: #666666;
+}
+
+.trabalhos-item {
+  background: #f0f0f0;
+  padding: 40px;
+  border-radius: 6px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 10%);
+}
+
+.trabalhos-item h3 {
+  font-size: 1.25rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.trabalhos-item h3.ceeja::before {
+  content: "";
+  display: inline-block;
+  background: url("../img/ceeja.svg");
+  width: 30px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.trabalhos-item h3.marmoraria::before {
+  content: "";
+  display: inline-block;
+  background: url("../img/marmoraria.svg");
+  width: 30px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.trabalhos-item h3.acosviasul::before {
+  content: "";
+  display: inline-block;
+  background: url("../img/acosviasul.svg");
+  width: 30px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.trabalhos-item p {
+  font-size: 1rem;
+  line-height: 1.3;
+  color: #3d3d3d;
+}
+
+.trabalhos span {
+  margin-top: 80px;
+  grid-column: 1 / -1;
+  background: #f5f5f5;
+  width: 100%;
+  height: 5px;
+  border-radius: 6px;
+}
+
+@media (max-width: 700px) {
+  .trabalhos {
+    grid-template-columns: 1fr;
+    padding: 0px 20px;
+    margin-top: 40px;
+  }
+  .trabalhos-item {
+    margin-bottom: 10px;
+  }
+  .trabalhos span {
+    margin-top: 40px;
+  }
+}

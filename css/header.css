@@ -1,0 +1,30 @@
+.cabecalho {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 40px 40px 80px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cabecalho h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.cabecalho-navegacao {
+  display: flex;
+  gap: 40px;
+}
+
+.cabecalho-navegacao a {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: inherit;
+}
+
+@media (max-width: 700px) {
+  .cabecalho {
+    flex-wrap: wrap;
+    padding: 20px 20px 40px 20px;
+  }
+}
